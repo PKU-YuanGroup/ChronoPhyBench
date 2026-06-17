@@ -5,8 +5,8 @@
 
 <h5 align="center"> -->
 <p align="center">
-    <img src="assets/logo.png" width="300" style="margin-bottom: 0.2;"/>
-<p> 
+  <img src="assets/logo.png" alt="logo">
+</p>
 <h2 align="center"> <a href="https://arxiv.org/abs/2606.07962">ChronoPhyBench: Do MLLMs Truly Understand the World or Merely Exploit Language Priors?</a></h2>
 <h5 align="center"> If you like our project, please give us a star ⭐ on GitHub for latest update.  </h2>
 
