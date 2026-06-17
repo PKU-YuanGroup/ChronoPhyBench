@@ -129,10 +129,11 @@ PhysVideo-Bench is released under Apache License Version 2.0.
 ## 🤝 Citation
 
 ```bibtex
-@article{physvideo-bench2025,
-  title={PhysVideo-Bench: A Comprehensive Benchmark for Evaluating Physical Reasoning in Video-based Large Language Models},
-  author={...},
-  journal={arXiv preprint},
-  year={2025}
+@article{zhu2026chronophybench,
+  title={ChronoPhyBench: Do MLLMs Truly Understand the World or Merely Exploit Language Priors?},
+  author={Zhu, Bin and Jia, Yanhao and Zhao, Kexin and Wang, Jie and Ning, Munan and Li, Hao and Niu, Yuwei and Sun, Tanqing and Yan, Huangchong and Pan, Mingjun and others},
+  journal={arXiv preprint arXiv:2606.07962},
+  year={2026}
+}
 }
 ```
