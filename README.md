@@ -33,7 +33,7 @@
 
 ## 📰 News
 
-**[2026.05]** ChronoPhyBench is now open-sourced! The evaluation code is still being organized and will be released soon.
+**[2026.06]** ChronoPhyBench is now open-sourced, along with its evaluation code!
 
 ---
 
