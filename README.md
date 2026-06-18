@@ -17,7 +17,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/your-org/ChronoPhyBench?color=critical&label=Issues)](https://github.com/your-org/PhysVideo-Bench/issues)
 [![GitHub closed issues](https://img.shields.io/github/issues-closed/your-org/ChronoPhyBench?color=success&label=Issues)](https://github.com/your-org/PhysVideo-Bench/issues?q=is%3Aissue+is%3Aclosed) -->
 [![hf_space](https://img.shields.io/badge/🤗-ChronoPhyBench-blue.svg)](https://huggingface.co/datasets/Kohsin/ChronoPhyBench)
-[![arXiv](https://img.shields.io/badge/Arxiv-2311.10122-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2606.07962)
+[![arXiv](https://img.shields.io/badge/Arxiv-2606.07962-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2606.07962)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](https://github.com/PKU-YuanGroup/ChronoPhyBench/blob/main/LICENSE) 
 
 </h5>
