@@ -73,29 +73,20 @@ The video data can easily be downloaded from [Huggingface](https://huggingface.c
 
 ## 🏗️ Usage
 
-### Single-GPU (choice QA)
+### Single-GPU (image-based options)
 ```bash
-python evaluate_v4.py \
+python evaluate.py \
   --model_name "your-model-name" \
   --api_key "your-api-key" \
   --json_path "your-json-folder" \
   --video_dir "your-video-folder" \
   --output_dir "your-results-folder"
+  --image_root "your-image-folder" \
 ```
 
 ### Multi-GPU distributed (torchrun)
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 evaluate_v4.py \
-  --model_name "your-model-name" \
-  --api_key "your-api-key" \
-  --json_path "your-json-folder" \
-  --video_dir "your-video-folder" \
-  --output_dir "your-results-folder"
-```
-
-### Outcome prediction (image-based options)
-```bash
-python evaluate_v4.py \
+CUDA_VISIBLE_DEVICES=0,1,2,3 torchrun --nproc_per_node=4 evaluate.py \
   --model_name "your-model-name" \
   --api_key "your-api-key" \
   --json_path "your-json-folder" \
