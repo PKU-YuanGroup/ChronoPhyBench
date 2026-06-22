@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChronoPhyBench: A comprehensive benchmark for evaluating physical reasoning in video-based large language models, published in 2026.">
+    <title>ChronoPhyBench: Do MLLMs Truly Understand the World?</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__content">
+            <p class="eyebrow">2026 · PKU-YuanGroup · arXiv 2606.07962</p>
+            <h1>ChronoPhyBench</h1>
+            <p class="subtitle">Do MLLMs Truly Understand the World or Merely Exploit Language Priors?</p>
+            <p class="lede">
+                A comprehensive benchmark that evaluates whether video-based large language models
+                genuinely reason about physical processes &mdash; or merely rely on superficial
+                textual shortcuts. ChronoPhyBench exposes the prevalence of shortcut learning
+                and modality bias in MLLMs via next-state prediction and chronological sorting.
+            </p>
+            <div class="hero-links">
+                <a class="btn btn-primary" href="https://arxiv.org/abs/2606.07962" target="_blank" rel="noopener">arXiv Paper</a>
+                <a class="btn btn-secondary" href="https://github.com/PKU-YuanGroup/ChronoPhyBench" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn btn-secondary" href="https://huggingface.co/datasets/Kohsin/ChronoPhyBench" target="_blank" rel="noopener">HuggingFace Dataset</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="stats" aria-label="Dataset summary">
+            <div class="stat">
+                <span class="stat__value">10,000+</span>
+                <span class="stat__label">annotated videos</span>
+            </div>
+            <div class="stat">
+                <span class="stat__value">3</span>
+                <span class="stat__label">evaluation tasks</span>
+            </div>
+            <div class="stat">
+                <span class="stat__value">Real-world</span>
+                <span class="stat__label">physical processes</span>
+            </div>
+            <div class="stat">
+                <span class="stat__value">Multi-modal</span>
+                <span class="stat__label">cross-modal synthesis</span>
+            </div>
+        </section>
+
+        <section class="fig-section">
+            <img src="fig2.png" alt="ChronoPhyBench Figure" class="fig-main">
+        </section>
+
+        <section class="paper-card">
+            <div class="section-heading">
+                <p class="section-kicker">Paper Abstract</p>
+                <h2>Exposing shortcut learning in multimodal LLMs</h2>
+            </div>
+            <p>
+                While multimodal large language models (MLLMs) have demonstrated remarkable
+                performance on video understanding benchmarks, it remains unclear whether they
+                truly grasp the underlying <strong>physical dynamics</strong> of the world or
+                simply exploit statistical correlations in their training data.
+            </p>
+            <p>
+                We identify and systematically expose the prevalence of <strong>shortcut learning</strong>
+                and <strong>modality bias</strong> in MLLMs, demonstrating how textual priors
+                can induce hallucinations of physical reasoning capabilities. To address this,
+                we introduce <strong>ChronoPhyBench</strong>, a unified benchmark that employs
+                next-state prediction and chronological sorting to explicitly evaluate cross-modal
+                synthesis and penalize reliance on a single modality.
+            </p>
+            <p>
+                We release <strong>ChronoPhy</strong>, a large-scale dataset of over
+                <strong>10,000 annotated videos</strong>, providing the community with a rigorous
+                framework for stress-testing multimodal robustness and advancing the development
+                of Physical AI toward genuine Artificial General Intelligence.
+            </p>
+            <p>
+                Our benchmark targets the models' grasp of fundamental <strong>physical laws</strong>
+                &mdash; gravity, collision, conservation, friction, deformation &mdash; and their
+                ability to reason about <strong>causal chains</strong> in dynamic, real-world scenes.
+            </p>
+        </section>
+
+        <section class="logo-section">
+            <img src="assets/logo.png" alt="ChronoPhyBench Logo" class="logo-main">
+        </section>
+
+        <section class="split-section">
+            <div>
+                <p class="section-kicker">Benchmark Design</p>
+                <h2>Three tasks targeting cross-modal physical reasoning</h2>
+                <p>
+                    ChronoPhyBench evaluates Video-LLMs across three complementary task types,
+                    each designed to probe a different aspect of physical understanding. Tasks
+                    require synthesis of visual dynamics and physical priors &mdash; single-modality
+                    shortcuts are explicitly penalized.
+                </p>
+            </div>
+            <div class="task-grid" aria-label="Supported tasks">
+                <div class="task-card">
+                    <h3>Multiple-Choice QA</h3>
+                    <p>Watch a video and answer physics questions. Includes both standard QA and hallucination-robust QA variants to test reasoning vs. guessing.</p>
+                    <span class="task-metric">Metric: Accuracy</span>
+                </div>
+                <div class="task-card">
+                    <h3>Temporal Frame Selecting</h3>
+                    <p>Given a historical video, select the single physically-plausible next frame from multiple semantically similar but physically incorrect candidates.</p>
+                    <span class="task-metric">Metric: Accuracy</span>
+                </div>
+                <div class="task-card">
+                    <h3>Temporal Frame Sorting</h3>
+                    <p>Given an initial background and shuffled future-state images, rearrange them into the correct temporal and physical order of evolution.</p>
+                    <span class="task-metric">Metric: Exact Match</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="release-panel">
+            <p class="section-kicker">Resources</p>
+            <h2>Open-source and publicly available</h2>
+            <p>
+                The ChronoPhy dataset, evaluation code, and baseline results are fully open-sourced.
+                All materials are available on GitHub and HuggingFace for the research community.
+            </p>
+            <div class="release-links">
+                <a href="https://arxiv.org/abs/2606.07962" target="_blank" rel="noopener" class="release-link">
+                    <span class="release-link__icon">📄</span>
+                    <span>arXiv: 2606.07962</span>
+                </a>
+                <a href="https://github.com/PKU-YuanGroup/ChronoPhyBench" target="_blank" rel="noopener" class="release-link">
+                    <span class="release-link__icon">💻</span>
+                    <span>GitHub Repository</span>
+                </a>
+                <a href="https://huggingface.co/datasets/Kohsin/ChronoPhyBench" target="_blank" rel="noopener" class="release-link">
+                    <span class="release-link__icon">🤗</span>
+                    <span>HuggingFace Dataset</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>ChronoPhyBench Team · PKU-YuanGroup</span>
+        <span>&copy; 2026 · Apache 2.0 License</span>
+    </footer>
+</body>
+</html>
